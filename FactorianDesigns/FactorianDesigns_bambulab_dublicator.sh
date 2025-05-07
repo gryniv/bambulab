@@ -156,7 +156,7 @@ if [[ "$MERGE_ANSWER" == "y" ]]; then
         TOTAL_WEIGHT=$(awk "BEGIN { printf \"%.2f\", $TOTAL_WEIGHT + $WEIGHT_TOTAL }")
         WEIGHT_INFO+=("🧩 Plate $INDEX – $REPEAT × ${WEIGHT_PER_COPY}g = ${WEIGHT_TOTAL}g")
 
-        CONTENT=$(grep -q "M190 S22" "$SRC" && sed "s/M190 S22/M190 S$TARGET_TEMP/g" "$SRC" || cat "$SRC")
+        CONTENT=$(grep -q "M190 S18" "$SRC" && sed "s/M190 S18/M190 S$TARGET_TEMP/g" "$SRC" || cat "$SRC")
         for ((j = 1; j <= REPEAT; j++)); do
             PROGRESS=$((j * 100 / REPEAT))
             FILLED=$((PROGRESS / 5))
@@ -183,8 +183,8 @@ else
         REPEAT=${REPEAT:-1}
         ORIGINAL="$PLATE"
 
-        if grep -q "M190 S22" "$PLATE"; then
-            sed "s/M190 S22/M190 S$TARGET_TEMP/g" "$PLATE" > "$PLATE.tmp" && mv "$PLATE.tmp" "$PLATE"
+        if grep -q "M190 S18" "$PLATE"; then
+            sed "s/M190 S18/M190 S$TARGET_TEMP/g" "$PLATE" > "$PLATE.tmp" && mv "$PLATE.tmp" "$PLATE"
         fi
 
         CONTENT=$(cat "$PLATE")
