@@ -31,11 +31,14 @@ sudo apt install zenity unzip zip sed
 ## 🚀 How to Use
 
 1. Launch the script:
-
+   - fast download and start
    ```bash
-   wget -O FactorianDesigns_bambulab_dublicator.sh https://raw.githubusercontent.com/gryniv/bambulab/refs/heads/main/FactorianDesigns/FactorianDesigns_bambulab_dublicator.sh;. ./FactorianDesigns_bambulab_dublicator.sh
+   wget -O FactorianDesigns_bambulab_dublicator.sh https://raw.githubusercontent.com/gryniv/bambulab/main/FactorianDesigns/FactorianDesigns_bambulab_dublicator.sh && bash ./FactorianDesigns_bambulab_dublicator.sh
    ```
-
+   - from local
+   ```bash
+   bash ./FactorianDesigns_bambulab_dublicator.sh
+   ```
 2. Follow prompts to:
 
    - Choose interface language (auto-detected or manual).
