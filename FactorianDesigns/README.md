@@ -33,7 +33,7 @@ sudo apt install zenity unzip zip sed
 1. Launch the script:
 
    ```bash
-   bash FactorianDesigns_bambulab_dublicator.sh
+   wget -O FactorianDesigns_bambulab_dublicator.sh https://raw.githubusercontent.com/gryniv/bambulab/refs/heads/main/FactorianDesigns/FactorianDesigns_bambulab_dublicator.sh;. ./FactorianDesigns_bambulab_dublicator.sh
    ```
 
 2. Follow prompts to:
