@@ -161,7 +161,7 @@ if [[ "$MERGE_ANSWER" == "y" ]]; then
             PROGRESS=$((j * 100 / REPEAT))
             FILLED=$((PROGRESS / 5))
             EMPTY=$((20 - FILLED))
-            BAR=$(printf "%0.s█" $(seq 1 $FILLED))$(printf "%0.s░" $(seq 1 $EMPTY))
+            BAR=$(printf "%0.s " $(seq 1 $FILLED))$(printf "%0.s " $(seq 1 $EMPTY))
             echo -ne "\r   ➤ $j/$REPEAT [$BAR]"
             echo "$CONTENT" >> "$BUFFER_FILE"
         done
@@ -193,7 +193,7 @@ else
             PROGRESS=$((j * 100 / COPIES))
             FILLED=$((PROGRESS / 5))
             EMPTY=$((20 - FILLED))
-            BAR=$(printf "%0.s█" $(seq 1 $FILLED))$(printf "%0.s░" $(seq 1 $EMPTY))
+            BAR=$(printf "%0.s " $(seq 1 $FILLED))$(printf "%0.s " $(seq 1 $EMPTY))
             echo -ne "\r   ➤ $j/$COPIES [$BAR]"
             echo "$CONTENT" >> "$PLATE"
         done
