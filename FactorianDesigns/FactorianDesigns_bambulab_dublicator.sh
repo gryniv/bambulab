@@ -69,8 +69,8 @@ elif [[ "$DEFAULT_CODE" == "en" ]]; then
     declare -n TEXT=TEXT_EN
     echo "${TEXT[lang_detected]}"
 else
-    SUGGESTED_LANG="uk"
-    declare -n TEXT=TEXT_UK
+    SUGGESTED_LANG="en"
+    declare -n TEXT=TEXT_EN
     echo "${TEXT[lang_fallback]}"
 fi
 
