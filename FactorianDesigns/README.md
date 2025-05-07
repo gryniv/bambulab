@@ -1,4 +1,4 @@
-# 🖨️ plates.sh — Automate G-code Duplication in .3mf Archives
+# 🖨️ FactorianDesigns_bambulab_dublicator.sh — Automate G-code Duplication in .3mf Archives
 
 `FactorianDesigns_bambulab_dublicator.sh` is a terminal utility script designed to simplify the duplication of G-code content inside `.3mf` archives, supporting multi-language interaction, customizable duplication, print bed cooldown automation, and summary output for printing setup.
 
